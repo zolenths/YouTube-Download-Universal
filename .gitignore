@@ -1,0 +1,33 @@
+# Dependencies & Build
+node_modules
+dist
+dist-ssr
+target
+src-tauri/target
+src-tauri/gen
+
+# Lock files (requested to be clean)
+package-lock.json
+Cargo.lock
+
+# AI & Agent sensitive/internal folders
+.agent
+.agents
+.gemini
+
+# Editor & IDEs
+.vscode
+.idea
+.DS_Store
+*.suo
+*.sln
+*.sw?
+
+# Environment & Logs
+.env*
+*.log
+logs
+
+# Binaries (Sidecars)
+src-tauri/bin/*
+!src-tauri/bin/README.md
