@@ -12,7 +12,7 @@ YouTube Download Universal es una herramienta sencilla y rápida para bajar audi
 ## Demostración
 
 <p align="center">
-  <video src="https://github.com/Zolenn/YouTube-Download-Universal/raw/main/docs/preview.mp4" width="100%" controls autoplay loop muted></video>
+  <video src="https://raw.githubusercontent.com/Zolenn/YouTube-Download-Universal/main/docs/preview.mp4" width="100%" controls autoplay loop muted></video>
 </p>
 
 ## Cómo funciona
