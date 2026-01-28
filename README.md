@@ -1,73 +1,91 @@
-# YouTube Download Universal
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7d56ec1f-7707-4f90-846e-fe5a2b8718a6" width="128" />
+  <h1>YouTube Download Universal</h1>
+  
+  <p>
+    <img src="https://img.shields.io/github/v/release/zolenths/YouTube-Download-Universal?style=for-the-badge&color=blueviolet" />
+    <img src="https://img.shields.io/github/downloads/zolenths/YouTube-Download-Universal/total?style=for-the-badge&color=brightgreen" />
+    <img src="https://img.shields.io/github/license/zolenths/YouTube-Download-Universal?style=for-the-badge" />
+  </p>
 
-<img src="src-tauri/icons/icon.png" align="right" alt="YouTube Download Universal logo" width="120" height="120">
+  <p><i>Simple, fast, and universal video downloader built with Rust & Tauri.</i></p>
 
-YouTube Download Universal es una herramienta sencilla y rápida para bajar audio de YouTube en formato MP3 y FLAC con la mejor calidad posible.
+  [Descargar Ahora](https://github.com/zolenths/YouTube-Download-Universal/releases) • [Reportar Error](https://github.com/zolenths/YouTube-Download-Universal/issues) • [Apoyar Proyecto](https://ko-fi.com/zolen)
+</div>
 
-* **Privacidad total.** Sin telemetría ni servidores intermediarios. La comunicación es directa entre tu equipo y los servidores de contenido.
-* **Seguridad (Safety Gate).** Límite inteligente de 50 descargas diarias para proteger tu IP. Soporte para proxies si necesitas más.
-* **Formatos de alta fidelidad.** Extracción directa a MP3 (320kbps) y FLAC sin pérdida de calidad.
-* **Estética Retro-Terminal.** Interfaz minimalista inspirada en la consola, optimizada con modo claro y oscuro.
+<br />
 
-## Demostración
+---
 
+### 📍 Características Principales
+
+**YouTube Download Universal** es una herramienta de escritorio diseñada para ofrecer la mejor experiencia de descarga de audio, priorizando la velocidad y la privacidad.
+
+*   🔒 **Privacidad Total**: Sin telemetría. La conexión es directa entre tu equipo y los servidores de contenido.
+*   🛡️ **Safety Gate**: Límite inteligente de 50 descargas diarias para proteger tu IP.
+*   🎧 **Alta Fidelidad**: Extracción directa a **MP3 (320kbps)** y **FLAC** sin pérdida.
+*   🖥️ **Estética Terminal**: Interfaz minimalista optimizada con modos Claro (rosa pastel) y Oscuro.
+
+---
+
+### 🎬 Demostración
 
 https://github.com/user-attachments/assets/4239a314-9e97-41fe-bf95-9226a7716903
 
+---
 
-## Cómo funciona
+### ⚙️ Cómo funciona
 
-Al abrir la aplicación por primera vez, se configuran automáticamente los motores necesarios (`yt-dlp` y `ffmpeg`). Estos se encargan de la comunicación con las plataformas y del procesamiento del audio de forma 100% local en tu dispositivo.
+Al iniciar la app, se configuran automáticamente los motores `yt-dlp` y `ffmpeg`. Todo el procesamiento ocurre **100% en local**, garantizando que tus datos nunca salgan de tu dispositivo.
 
-## Uso básico
+> [!TIP]
+> **Uso Rápido:** Copia un link -> Pégalo -> Enter. ¡Tus archivos irán directos a tu carpeta predeterminada o seleccionada!
 
-1. Copia un enlace de YouTube.
-2. Pégalo en la aplicación.
-3. Pulsa Enter.
+---
 
-Tus archivos aparecerán directamente en la carpeta **Música** de tu sistema.
+### 📦 Instalación y Uso
 
 <details>
-<summary><b>Instrucciones de instalación</b></summary>
+<summary><b>Instrucciones para Usuarios</b></summary>
 
-Soporte actual para Windows y Linux. macOS en desarrollo.
+Soporte nativo para Windows y Linux.
 
-1. Descarga el ejecutable en [Releases](https://github.com/YOUR_USERNAME/youtube-download-universal/releases).
-2. Ejecuta el instalador.
-3. El primer inicio configurará automáticamente las herramientas necesarias.
+1.  Descarga el instalador desde la sección de [Releases](https://github.com/zolenths/YouTube-Download-Universal/releases).
+2.  Ejecuta el `.exe` (Windows) o el `.AppImage` (Linux).
+3.  ¡Listo! La primera vez tardará unos segundos más configurando los binarios internos.
 </details>
 
 <details>
-<summary><b>Desarrollo y compilación técnica</b></summary>
+<summary><b>Compilación (Desarrolladores)</b></summary>
 
-Para compilar el proyecto manualmente:
+Si prefieres compilarlo tú mismo:
 
-1. Instala Node.js y Rust.
-2. Clona el repositorio.
-3. Instala dependencias:
-   ```bash
-   npm install
-   ```
-4. Ejecuta:
-   ```bash
-   npm run tauri dev
-   ```
+1.  Instala Node.js y [Rust](https://www.rust-lang.org/).
+2.  `git clone https://github.com/zolenths/YouTube-Download-Universal.git`
+3.  `npm install`
+4.  `npm run tauri dev`
 </details>
 
-## Detalles técnicos
+---
+
+### 📊 Stack Tecnológico
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=rust,tauri,react,ts,tailwind,framer" alt="Tecnologías" />
 </p>
 
-* **Backend:** Rust + Tauri v2.
-* **Frontend:** React 19 + TypeScript + Tailwind CSS 4.
+*   **Core:** Rust + Tauri v2 (Eficiencia y seguridad).
+*   **UI:** React 19 + TypeScript + Tailwind CSS 4 + Framer Motion.
 
-## Apoyo al proyecto
+---
 
-Si te sirve la herramienta y quieres apoyarme con mi meta para el carnet de conducir (300€), puedes hacerlo aquí:
+### ☕ Apoyo al Proyecto
+
+Actualmente estoy ahorrando para mi carnet de conducir (**Meta: 300€**). Si esta herramienta te ha ahorrado tiempo o te ha sido útil, cualquier granito de arena ayuda.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/zolen)
 
 ---
-@zolen • (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧
+<div align="center">
+  @zolen • (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧
+</div>
