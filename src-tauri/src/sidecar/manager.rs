@@ -289,7 +289,7 @@ pub async fn download_ffmpeg<R: tauri::Runtime>(
         let file = std::fs::File::open(&temp_path).map_err(|e| SidecarError::IoError(e.to_string()))?;
         let mut archive = zip::ZipArchive::new(file).map_err(|e| SidecarError::IoError(e.to_string()))?;
         
-        let target = get_target_triple()?;
+        let _target = get_target_triple()?;
         
         // Find and extract ffmpeg and ffprobe
         let binaries_to_extract = if cfg!(target_os = "windows") {
