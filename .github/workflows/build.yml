@@ -91,7 +91,7 @@ jobs:
             ## ⚠️ Important
             
             This application requires `yt-dlp` and `ffmpeg` binaries. They are bundled in the release, but you may need to allow execution permissions on Linux.
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
           args: --target ${{ matrix.target }}
 
