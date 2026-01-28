@@ -6,11 +6,9 @@ use regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
 use tauri::{Emitter, Manager};
-use tauri_plugin_shell::process::CommandEvent;
 use tauri_plugin_shell::ShellExt;
 use thiserror::Error;
 
-use crate::anti_ban;
 use crate::proxy;
 use crate::safety;
 use crate::sidecar::{get_sidecar_path, SidecarType};
