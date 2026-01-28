@@ -12,6 +12,9 @@ env:
 permissions:
   contents: write
 
+permissions:
+  contents: write
+
 jobs:
   build:
     strategy:
