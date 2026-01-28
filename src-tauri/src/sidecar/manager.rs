@@ -333,6 +333,9 @@ pub async fn download_ffmpeg<R: tauri::Runtime>(
     // Linux uses tar.xz - for now emit an error asking user to install manually
     #[cfg(target_os = "linux")]
     {
+        // Clean up temp file before early return
+        let _ = std::fs::remove_file(&temp_path);
+        
         // TODO: Add tar.xz extraction support
         return Err(SidecarError::UnsupportedPlatform(
             "Linux ffmpeg auto-install not yet supported. Please install ffmpeg via your package manager: sudo apt install ffmpeg".into()
@@ -340,7 +343,9 @@ pub async fn download_ffmpeg<R: tauri::Runtime>(
     }
     
     // Clean up temp file
-    let _ = std::fs::remove_file(&temp_path);
+    if temp_path.exists() {
+        let _ = std::fs::remove_file(&temp_path);
+    }
     
     // Emit completion
     let _ = app.emit("setup-progress", serde_json::json!({

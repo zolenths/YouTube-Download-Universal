@@ -6,7 +6,6 @@ use regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
 use tauri::{Emitter, Manager};
-use tauri_plugin_shell::ShellExt;
 use thiserror::Error;
 
 use crate::proxy;
