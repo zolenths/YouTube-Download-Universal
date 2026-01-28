@@ -12,7 +12,8 @@ YouTube Download Universal is a simple and fast tool to download audio from YouT
 ## Demo
 
 <p align="center">
-  <video src="https://raw.githubusercontent.com/Zolenn/YouTube-Download-Universal/main/docs/preview.mp4" width="100%" controls autoplay loop muted></video>
+  <video src="https://github.com/Zolenn/YouTube-Download-Universal/blob/main/docs/preview.mp4?raw=true" width="100%" muted autoplay loop controls playsinline>
+  </video>
 </p>
 
 ## How it works
